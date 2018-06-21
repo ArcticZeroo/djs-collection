@@ -1,6 +1,6 @@
 {
   "name": "djs-collection",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Collections extend Map() and offer helper methods from Array.prototype",
   "main": "index.js",
   "scripts": {
