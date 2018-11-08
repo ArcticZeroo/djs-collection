@@ -1,8 +1,8 @@
 {
   "name": "djs-collection",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "Collections extend Map() and offer helper methods from Array.prototype",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "node test.js"
   },
@@ -10,7 +10,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eslachance/djs-collection.git"
+    "url": "git+https://github.com/arcticzeroo/djs-collection.git"
   },
   "keywords": [
     "node",
@@ -19,7 +19,7 @@
     "helpers"
   ],
   "bugs": {
-    "url": "https://github.com/eslachance/djs-collection/issues"
+    "url": "https://github.com/arcticzeroo/djs-collection/issues"
   },
-  "homepage": "https://github.com/eslachance/djs-collection#readme"
+  "homepage": "https://github.com/arcticzeroo/djs-collection#readme"
 }
