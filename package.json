@@ -1,12 +1,12 @@
 {
-  "name": "djs-collection",
+  "name": "@arcticzeroo/collection",
   "version": "1.0.0",
   "description": "Collections extend Map() and offer helper methods from Array.prototype",
   "main": "index.ts",
   "scripts": {
     "test": "node test.js"
   },
-  "author": "Evelyne Lachance",
+  "author": "ArcticZeroo",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
