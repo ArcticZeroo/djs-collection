@@ -416,7 +416,7 @@ export default class Collection<TKey = any, TValue = any> extends Map<TKey, TVal
      * @param {Object} [thisArg] Value to use as `this` when executing function
      * @returns {Collection}
      */
-    filter(predicate: (val: TValue, key: TKey, collection: this) => boolean, thisArg?: any): Collection {
+    filter(predicate: (val: TValue, key: TKey, collection: this) => boolean, thisArg?: any): Collection<TKey, TValue> {
         if (thisArg) {
             predicate = predicate.bind(thisArg);
         }
@@ -555,7 +555,7 @@ export default class Collection<TKey = any, TValue = any> extends Map<TKey, TVal
      * @returns {Collection}
      * @example const newColl = someColl.clone();
      */
-    clone(): Collection {
+    clone(): Collection<TKey, TValue> {
         return new Collection(this);
     }
 
@@ -565,7 +565,7 @@ export default class Collection<TKey = any, TValue = any> extends Map<TKey, TVal
      * @returns {Collection}
      * @example const newColl = someColl.concat(someOtherColl, anotherColl, ohBoyAColl);
      */
-    concat(...collections: Collection[]): Collection {
+    concat(...collections: Collection[]): Collection<TKey, TValue> {
         const newColl = this.clone();
 
         for (const coll of collections) {
@@ -630,8 +630,8 @@ export default class Collection<TKey = any, TValue = any> extends Map<TKey, TVal
      * according to the string conversion of each element.
      * @returns {Collection}
      */
-    sort(compareFunction: ((valA: TValue, valB: TValue, keyA: TKey, keyB: TKey) => number) = (x, y) => +(x > y) || +(x === y) - 1): Collection {
-        return new Collection(
+    sort(compareFunction: ((valA: TValue, valB: TValue, keyA: TKey, keyB: TKey) => number) = (x, y) => +(x > y) || +(x === y) - 1): Collection<TKey, TValue> {
+        return new Collection<TKey, TValue>(
             Array.from(this.entries())
                 .sort((a, b) => compareFunction(a[1], b[1], a[0], b[0]))
         );

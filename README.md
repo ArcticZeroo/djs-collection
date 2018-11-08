@@ -1,27 +1,11 @@
 # djs-collection
 
-***__THIS REPOSITORY IS NOW OBSOLETE AND WILL NO LONGER BE UPDATED__***
+Evie (the person who originally extracted this module into its own repo) wants you to use enmap instead. Feel free to do so:
 
-## Moving to Enmap
+To get enmap, see [The NPMJS Page](https://www.npmjs.com/package/enmap).
 
-`djs-collection-persistent` and `djs-collection` have been merged into a more efficient system that's been renamed *Enmap*.
+I had functionality that was not covered by enmap (namely the random/first/etc type stuff) and she refused to support it, so I just cloned her djs-collection repo.
 
-To get enmap, see [The NPMJS Page](https://www.npmjs.com/package/enmap). 
+This one doesn't have an obnoxious console.log that cannot be disabled without modifying the module! (seriously though, why wasn't it just emitted to the process or put in the package.json?)
 
-Updating requires no migration, only a change in code: 
-
-```js
-// OLD CODE
-
-const Collection = require("djs-collection");
-const myColl = new Collection();
-
-// NEW CODE
-
-const Enmap = require('enmap');
-const myColl = new Enmap();
-```
-
-## Support
-
-For support join [〈evie.codes〉](https://discord.gg/PhT8scR) and talk to me, 〈evie.codes〉!
+Also, there are typescript definitions as the whole thing has been ported to it.
