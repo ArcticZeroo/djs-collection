@@ -1,6 +1,6 @@
 {
   "name": "@arcticzeroo/collection",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Collections extend Map() and offer helper methods from Array.prototype",
   "main": "dist/index.js",
   "scripts": {
