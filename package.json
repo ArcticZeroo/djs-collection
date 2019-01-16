@@ -2,9 +2,10 @@
   "name": "@arcticzeroo/collection",
   "version": "1.0.2",
   "description": "Collections extend Map() and offer helper methods from Array.prototype",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "prepublish": "tsc"
   },
   "author": "ArcticZeroo",
   "license": "Apache-2.0",

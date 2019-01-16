@@ -7,7 +7,10 @@
       "es2018"
     ],
     "declaration": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "outDir": "dist"
   },
   "exclude": [
     "node_modules"
